@@ -1,0 +1,110 @@
+Here is a to-do list for your dating app project, broken down into detailed steps and ordered for completion:
+
+### Week 03 Tasks: CRUD Operations
+
+#### Setup and Initialization
+1. **Create a new Node.js project**
+   - Initialize a new Node.js project using `npm init`.
+   - Install necessary dependencies: `express`, `mongoose`, `dotenv`, `body-parser`, `cors`, etc.
+
+2. **Set up MongoDB**
+   - Create a new MongoDB database for the project.
+   - Create two collections: `users` and `profiles`.
+
+3. **Establish Database Connection**
+   - Create a `.env` file to store MongoDB credentials.
+   - Set up a connection to MongoDB using Mongoose in your Node.js project.
+
+#### Create API Routes
+
+4. **Create Folder Structure**
+   - Create folders for `routes`, `controllers`, and `models`.
+
+5. **Define Mongoose Schemas and Models**
+   - Create a `User` model with fields such as `username`, `email`, `password`, etc.
+   - Create a `Profile` model with more than 7 fields such as `userId`, `name`, `age`, `gender`, `bio`, `interests`, `location`, `profilePicture`, etc.
+
+6. **Create CRUD Operations for Users**
+   - **GET /users**: Retrieve all users.
+   - **POST /users**: Create a new user.
+   - **PUT /users/:id**: Update a user by ID.
+   - **DELETE /users/:id**: Delete a user by ID.
+
+7. **Create CRUD Operations for Profiles**
+   - **GET /profiles**: Retrieve all profiles.
+   - **POST /profiles**: Create a new profile.
+   - **PUT /profiles/:id**: Update a profile by ID.
+   - **DELETE /profiles/:id**: Delete a profile by ID.
+
+#### Validation and Error Handling
+
+8. **Add Validation to Routes**
+   - Use middleware to validate incoming data for all routes.
+
+9. **Add Error Handling**
+   - Implement error handling for all routes to handle cases such as invalid data, resource not found, etc.
+
+#### Documentation and Testing
+
+10. **Create API Documentation**
+    - Document the API routes using Swagger.
+    - Test the routes using tools like Postman.
+
+11. **Publish API**
+    - Set up a new project on Render.
+    - Add environment variables to Render for MongoDB credentials.
+    - Deploy the API to Render.
+
+#### Verification and Submission for Week 03
+
+12. **Verify CRUD Functionality**
+    - Verify that all CRUD operations work correctly in MongoDB.
+    - Ensure all validations and error handling are in place.
+
+13. **Create Demonstration Video**
+    - Record a brief video demonstrating the CRUD operations and the database being modified.
+    - Upload the video to YouTube.
+
+14. **Submit Links**
+    - Submit GitHub repo, Render site, and YouTube video links in I-Learn.
+
+### Week 04 Tasks: Authentication and Security
+
+#### Implement OAuth for User Management
+
+1. **Set Up OAuth**
+   - Choose an OAuth provider (e.g., Google, GitHub).
+   - Set up OAuth authentication using a package like `passport`.
+
+2. **Create User Authentication Routes**
+   - **POST /auth/signup**: Sign up a new user.
+   - **POST /auth/login**: Log in an existing user.
+   - **GET /auth/logout**: Log out the user.
+
+3. **Secure API Routes**
+   - Restrict access to certain routes based on user authentication status.
+   - Ensure that only authenticated users can perform certain actions (e.g., creating or updating profiles).
+
+4. **Hash Passwords**
+   - Use `bcrypt` to hash user passwords before storing them in MongoDB.
+
+#### Update Documentation and Verification
+
+5. **Update API Documentation**
+   - Update Swagger documentation to include authentication and security measures.
+   - Ensure that all routes are accurately documented.
+
+6. **Verify Security Measures**
+   - Test the authentication and authorization functionalities.
+   - Ensure that all protected routes require proper authentication.
+
+#### Final Demonstration and Submission
+
+7. **Create Final Demonstration Video**
+   - Record a brief video demonstrating OAuth, validation, and restricted endpoints.
+   - Upload the video to YouTube.
+
+8. **Final Submission**
+   - Push any changes to GitHub.
+   - Verify changes in Render.
+   - Submit GitHub repo, Render site, and YouTube video links in I-Learn.

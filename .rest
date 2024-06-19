@@ -1,0 +1,9 @@
+### Get all Profiles
+GET http://localhost:3000/profiles HTTP/1.1
+
+### Get Profile by ID
+GET http://localhost:3000/profiles/1 HTTP/1.1
+
+### Create Profile
+POST http://localhost:3000/profiles HTTP/1.1
+Content-Type: application/json

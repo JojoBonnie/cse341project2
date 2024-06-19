@@ -1,0 +1,44 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startdev": "nodemon server.js",
+    "start": "node server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "swagger": "node ./swagger.js"
+  },
+  "keywords": [],
+  "author": "Jojo Masebe",
+  "license": "ISC",
+  "description": "CSE341 Project 2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JojoBonnie/cse431-project2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JojoBonnie/cse431-project2/issues"
+  },
+  "homepage": "https://github.com/JojoBonnie/cse431-project2#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.4.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "nodemon": "^3.1.3",
+    "prettier": "^3.3.1",
+    "swagger-autogen": "^2.23.7"
+  }
+}
