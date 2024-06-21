@@ -18,7 +18,10 @@ const userSchema = new Schema({
     unique: true,
     match: [/\S+@\S+\.\S+/, "is invalid"],
   },
-  password: String,
+  password: {
+    type: String,
+    required: true,
+  },
   createdAt: {
     type: Date,
     immutable: true,
@@ -34,7 +37,10 @@ userSchema.virtual("fullName").get(function () {
   return `${this.firstName} ${this.lastName}`;
 });
 
-userSchema.pre("save", function (next) {
+userSchema.pre("save", async function (next) {
+  if (this.isModified("password")) {
+    this.password = await bcrypt.hash(this.password, 10);
+  }
   this.updatedAt = Date.now();
   next();
 });
